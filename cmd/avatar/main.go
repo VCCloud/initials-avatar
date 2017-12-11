@@ -10,7 +10,6 @@ import (
 	"github.com/codegangsta/cli"
 	"github.com/holys/initials-avatar"
 	"github.com/labstack/echo"
-	mw "github.com/labstack/echo/middleware"
 )
 
 type avatarHandler struct {
@@ -53,8 +52,6 @@ func server(ctx *cli.Context) {
 	port := ctx.Int("port")
 
 	e := echo.New()
-	e.Use(mw.Logger())
-	e.Use(mw.Recover())
 
 	fFile, err := filepath.Abs(fontFile)
 	if err != nil {
