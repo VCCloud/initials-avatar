@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: avatar-ingress
+  namespace: vccloud
+  annotations:
+    ingress.kubernetes.io/ssl-redirect: "false"
+spec:
+  rules:
+  - host: avatar.vce.vn
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: initials-avatar
+          servicePort: 80

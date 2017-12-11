@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: initials-avatar
+  namespace: vccloud
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: initials-avatar
+    spec:
+      containers:
+      - name: name
+        image: hub.paas.vn/public/initials-avatar
+      imagePullSecrets:
+        - name: registry
