@@ -8,7 +8,7 @@ import (
 	"strconv"
 
 	"github.com/codegangsta/cli"
-	"github.com/holys/initials-avatar"
+	"github.com/VCCloud/initials-avatar"
 	"github.com/labstack/echo"
 )
 
