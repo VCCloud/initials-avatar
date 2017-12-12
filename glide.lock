@@ -1,5 +1,5 @@
-hash: 12b72589318de53a2e260d4c28ed935e70cb9092f81447cdaa63c6ec213bb165
-updated: 2016-09-22T09:38:07.059354103+08:00
+hash: 24f9977d6581d92680a32ad4c8e46d542e2f54d7b64fcd74f4fb257aa6c613e0
+updated: 2017-12-12T02:23:31.744019233Z
 imports:
 - name: github.com/codegangsta/cli
   version: d53eb991652b1d438abdd34ce4bfa3ef1539108e
@@ -12,8 +12,6 @@ imports:
   - truetype
 - name: github.com/labstack/echo
   version: 5789bde991cc5c41536e4fd82cc0107e7cd3d0eb
-  subpackages:
-  - middleware
 - name: github.com/labstack/gommon
   version: 431777a5117c8de4352a400dad1e2a55f484b189
   subpackages:
@@ -25,6 +23,8 @@ imports:
   version: 66b8e73f3f5cda9f96b69efd03dd3d7fc4a5cdb8
 - name: github.com/valyala/fasttemplate
   version: 3b874956e03f1636d171bda64b130f9135f42cff
+- name: github.com/VCCloud/initials-avatar
+  version: d3ddb8d0237f3a8a91d31f33dac962a293314793
 - name: golang.org/x/image
   version: bb355ba4424d077d404aafbb59b05776b2e88fa7
   subpackages:
@@ -39,8 +39,6 @@ imports:
   version: 8f0908ab3b2457e2e15403d3697c9ef5cb4b57a9
   subpackages:
   - unix
-- name: gopkg.in/labstack/echo.v1
-  version: 5789bde991cc5c41536e4fd82cc0107e7cd3d0eb
 - name: stathat.com/c/consistent
   version: 748f01b59d1b2218efe39513039e9ee31266d7c7
 testImports: []

@@ -63,6 +63,7 @@ func (g *drawer) Draw(s string, size int, bg *color.RGBA) image.Image {
 	}
 
 	// font index
+
 	fi := g.font.Index([]rune(s)[0])
 
 	// glyph example: http://www.freetype.org/freetype2/docs/tutorial/metrics.png
