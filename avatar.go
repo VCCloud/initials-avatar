@@ -93,7 +93,7 @@ func (a *InitialsAvatar) DrawToBytes(name string, size int, encoding ...string) 
 	}
 	name = strings.TrimSpace(name)
 	firstRune := []rune(name)[0]
-	if !isHan(firstRune) && !unicode.IsLetter(firstRune) {
+	if !isHan(firstRune) && !unicode.IsLetter(firstRune) && !unicode.IsDigit(firstRune){
 		return nil, ErrUnsupportChar
 	}
 	initials := getInitials(name)
